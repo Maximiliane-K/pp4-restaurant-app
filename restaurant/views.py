@@ -5,8 +5,8 @@ from .models import HomePage
 # Create your views here.
 
 def home(request):
-    content_home = HomePage.objects.all()
+    content_home = HomePage.objects.last()
 
-    context = {'home': home,}
+    context = {'content_home': content_home}
 
     return render(request, 'home/home.html', context)
