@@ -1,1 +1,1 @@
-web:gunicorn amoreresto.wsgi
+web: gunicorn amoreresto.wsgi
