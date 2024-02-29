@@ -5,5 +5,8 @@ from django.db import models
 class HomePage(models.Model):
     introduction = models.TextField()
 
+    class Meta:
+        verbose_name_plural = 'Home Page'
+
     def __str__(self):
-        return "Context for Landing Page"
+        return "Content for Landing Page"
