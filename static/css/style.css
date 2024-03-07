@@ -1,5 +1,3 @@
-
-
 /* remove default values*/
 * {
     margin: 0;
@@ -31,7 +29,7 @@ body {
     padding: 5px;
 }
 
-/* style for home.html*/
+/* style for index.html*/
 .about {
     background-color: white;
     font-style: italic;
