@@ -9,4 +9,4 @@ def home(request):
 
     context = {'content_home': content_home}
 
-    return render(request, 'home/home.html', context)
+    return render(request, 'home/index.html', context)
