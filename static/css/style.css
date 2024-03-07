@@ -7,8 +7,10 @@
     border: 0;
 }
 
+/* style for base.html */
 body {
     font-family: 'Red Hat Display', serif;
+    color: #082C16;
     background-color: #FBAFAF;
 }
 
@@ -27,4 +29,24 @@ body {
     font-size: 1.2em;
     font-weight: 400;
     padding: 5px;
+}
+
+/* style for home.html*/
+.about {
+    background-color: white;
+    font-style: italic;
+}
+
+.about h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.about p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    line-height: 2;
 }
