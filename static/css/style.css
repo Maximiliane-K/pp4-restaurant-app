@@ -9,14 +9,28 @@
 body {
     font-family: 'Red Hat Display', serif;
     color: #082C16;
-    background-color: #FBAFAF;
+    background-color: #FFFFFF;
 }
 
 .navbar {
-    height: 200px;
+    background-color: #FBAFAF;
+    height: 150px;
 }
 
 /* Footer */
+footer {
+    background-color: #FBAFAF;
+}
+
+.footer {
+    background-color: #FBAFAF;
+    height: 150px;
+}
+
+.footer-icon {
+    padding: 10px;
+}
+
 .fa-brands {
     font-size: 1.2em;
     font-weight: 400;
