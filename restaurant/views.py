@@ -22,6 +22,6 @@ def foodmenu(request):
     
     context = {'categories': categories, 'menu_items': menu_items}
 
-    return render(request, 'menu.html', context)
+    return render(request, 'food.html', context)
 
 
