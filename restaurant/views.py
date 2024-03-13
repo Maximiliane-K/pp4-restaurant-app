@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import HomePage, Category, MenuItems
+from .models import HomePage, Category, MenuItems, BeverageCategory, BeverageItems
 
 
 def home(request):
@@ -23,5 +23,17 @@ def foodmenu(request):
     context = {'categories': categories, 'menu_items': menu_items}
 
     return render(request, 'food.html', context)
+
+
+def beveragemenu(request):
+    """
+    View to show all beverages available 
+    """
+    beverage_categories = BeverageCategory.objects.all()
+    beverage_items = BeverageItems.objects.all()
+    
+    context = {'beverage_categories': beverage_categories, 'beverage_items': beverage_items}
+
+    return render(request, 'drinks.html', context)
 
 
