@@ -7,4 +7,5 @@ app_name = 'restaurant'
 urlpatterns = [
     path('', views.home, name='home'),
     path('food/', views.foodmenu, name='foodmenu'),
+    path('drink/', views.beveragemenu, name='beveragemenu'),
 ]

@@ -34,6 +34,6 @@ def beveragemenu(request):
     
     context = {'beverage_categories': beverage_categories, 'beverage_items': beverage_items}
 
-    return render(request, 'drinks.html', context)
+    return render(request, 'drink.html', context)
 
 
