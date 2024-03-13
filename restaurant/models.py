@@ -33,7 +33,7 @@ class MenuItems(models.Model):
     """
     name = models.CharField(max_length=100)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category,related_name='menu_items', on_delete=models.CASCADE)
 
     class Meta:
         verbose_name_plural = 'Menu Items'
