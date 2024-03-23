@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Bookings{% endblock %}
+
+{% block content %}
+
+    <h1>Your Bookings</h1>
+    <ul>
+        {% for booking in user_bookings %}
+            <li>
+                Date and Time of Reservation: {{ booking.date_time }}
+                <!-- Delete Button -->
+                <form action="{% url 'reservations:delete_booking' booking.id %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        {% empty %}
+            <li>No bookings found.</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

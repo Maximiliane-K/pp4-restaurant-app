@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Booking Successful{% endblock %}
+
+{% block content %}
+
+    <h2>Booking Successful</h2>
+    <p>Your table has been booked successfully!</p>
+    {% if latest_booking %}
+        <p>Date and Time of Reservation: {{ latest_booking.date_time }}</p>
+    {% endif %}
+
+{% endblock %}

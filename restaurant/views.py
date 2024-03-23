@@ -37,3 +37,12 @@ def beveragemenu(request):
     return render(request, 'drink.html', context)
 
 
+def contact(request):
+    """
+    View to contact page
+    """
+    return render(request, 'contact.html')
+
+
+
+

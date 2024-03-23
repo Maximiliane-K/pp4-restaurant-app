@@ -61,6 +61,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'amoreresto.urls'
 
+LOGIN_URL = '/accounts/login'
+LOGOUT_REDIRECT_URL = '/custom_logout/'
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
